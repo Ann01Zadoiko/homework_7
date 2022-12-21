@@ -5,9 +5,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="icon" href="26387fa4f5b1e3f7b6217b27d79bf264.png" type="image/png" sizes="16x16">
-        <link rel="icon" href="2d0b56e7e51cf11036ad8734bdb67e2d.png" type="image/png" sizes="32x32">
-        <link rel="apple-touch-icon" href="725b756a69a7d4c235070e51acd85560.png" sizes="180x180">
 
         <style>
             table {
@@ -18,16 +15,16 @@
 
             td {
                 border: 2px solid grey;
-                text-align: left;
+                text-align: middle;
                 padding: 6px;
 
             }
 
             th {
                 border: 2px solid grey;
-                text-align: left;
+                text-align: middle;
                 padding: 6px;
-                background-color: white;
+                background-color: whitesmoke;
             }
 
             tr:nth-child(even) {

@@ -5,7 +5,7 @@
 <html>
     <body>
         <form action="/developers/find">
-            <label for="id"><font color="#ffffff">Developer id:</font></label><br>
+            <label for="id">Developer id:</label><br>
             <input type="text" id="developerId" name="developerId">
             <button type="submit">Find</button>
         </form><br>
@@ -34,7 +34,7 @@
             </table>
         </c:if>
         <c:if test="${empty developer.id}">
-            <p><font color="#ffffff">${message}</font></p>
+            <p>${message}</p>
         </c:if>
     </body>
 </html>

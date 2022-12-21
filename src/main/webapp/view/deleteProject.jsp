@@ -5,10 +5,10 @@
 <html>
     <body>
         <form action="/projects/delete">
-            <label for="id"><font color="#ffffff">Project id:</font></label><br>
+            <label for="id">Project id:</label><br>
             <input type="text" id="projectId" name="projectId">
             <button type="submit">Delete</button>
         </form><br>
-        <p><font color="#ffffff">${message}</font></p>
+        <p>${message}</p>
     </body>
 </html>

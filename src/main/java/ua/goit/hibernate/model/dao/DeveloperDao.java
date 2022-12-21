@@ -31,6 +31,7 @@ public class DeveloperDao {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_developer")
     public Integer getId() {
         return id;
     }

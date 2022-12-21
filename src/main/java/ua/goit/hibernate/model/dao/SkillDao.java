@@ -27,6 +27,7 @@ public class SkillDao {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_skill")
     public Integer getId() {
         return id;
     }

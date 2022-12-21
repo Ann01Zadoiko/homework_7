@@ -5,9 +5,9 @@
 <html>
     <body>
         <form action="/customers/add" method="post">
-            <label for="name"><font color="#ffffff">Customer name:</font></label><br>
+            <label for="name">Customer name:</label><br>
             <input type="text" id="customerName" name="customerName"><br>
-            <label for="name"><font color="#ffffff">Country:</font></label><br>
+            <label for="name">Country:</label><br>
             <input type="text" id="country" name="country"><br>
             <button type="submit">Save</button>
         </form><br>
@@ -33,7 +33,7 @@
             <p><font color="#ffffff">${message}</font></p>
         </c:if>
         <c:if test="${empty savedCustomer}">
-            <p><font color="#ffffff">${message}</font></p>
+            <p>${message}</p>
         </c:if>
     </body>
 </html>

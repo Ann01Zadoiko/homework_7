@@ -20,10 +20,12 @@ public class DeveloperRepository implements Repository<DeveloperDao> {
 
     @Override
     public DeveloperDao save(DeveloperDao entity) {
-        try(Session session = connector.openSession()) {
+        try (Session session = connector.openSession()) {
             Transaction transaction = session.beginTransaction();
             session.save(entity);
             transaction.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
         return entity;
     }
@@ -40,10 +42,12 @@ public class DeveloperRepository implements Repository<DeveloperDao> {
 
     @Override
     public void delete(DeveloperDao entity) {
-        try(Session session = connector.openSession()) {
+        try (Session session = connector.openSession()) {
             Transaction transaction = session.beginTransaction();
             session.delete(entity);
             transaction.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 

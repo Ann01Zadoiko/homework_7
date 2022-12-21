@@ -5,13 +5,13 @@
 <html>
     <body>
         <form action="/developers/update" method="post">
-            <label for="name"><font color="#ffffff">Developer ID:</font></label><br>
+            <label for="name">Developer ID:</label><br>
             <input type="text" id="developerId" name="developerId"><br>
-            <label for="name"><font color="#ffffff">Developer name:</font></label><br>
+            <label for="name">Developer name:</label><br>
             <input type="text" id="developerName" name="developerName"><br>
-            <label for="name"><font color="#ffffff">Age:</font></label><br>
+            <label for="name">Age:</label><br>
             <input type="text" id="age" name="age"><br>
-            <label for="name"><font color="#ffffff">Salary:</font></label><br>
+            <label for="name">Salary:</label><br>
             <input type="text" id="salary" name="salary"><br>
             <button type="submit">Update</button>
         </form><br>
@@ -42,10 +42,10 @@
                     </tr>
                 </tbody>
             </table>
-            <p><font color="#ffffff">${message}</font></p>
+            <p>${message}</p>
         </c:if>
         <c:if test="${empty updatedDeveloper}">
-            <p><font color="#ffffff">${message}</font></p>
+            <p>${message}</p>
         </c:if>
     </body>
 </html>

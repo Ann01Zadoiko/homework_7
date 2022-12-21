@@ -5,11 +5,11 @@
 <html>
     <body>
         <form action="/developers/add" method="post">
-            <label for="name"><font color="#ffffff">Developer name:</font></label><br>
+            <label for="name">Developer name:</label><br>
             <input type="text" id="developerName" name="developerName"><br>
-            <label for="name"><font color="#ffffff">Age:</font></label><br>
+            <label for="name">Age:</label><br>
             <input type="text" id="age" name="age"><br>
-            <label for="name"><font color="#ffffff">Salary:</font></label><br>
+            <label for="name">Salary:</label><br>
             <input type="text" id="salary" name="salary"><br>
             <button type="submit">Save</button>
         </form><br>
@@ -38,7 +38,7 @@
             </table>
         </c:if>
         <c:if test="${empty savedDeveloper}">
-            <p><font color="#ffffff">${message}</font></p>
+            <p>${message}</p>
         </c:if>
     </body>
 </html>

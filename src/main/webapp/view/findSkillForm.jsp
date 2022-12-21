@@ -4,7 +4,7 @@
 <html>
     <body>
         <form action="/skills/find">
-            <label for="id"><font color="#ffffff">Skill id:</font></label><br>
+            <label for="id">Skill id:</label><br>
             <input type="text" id="skillId" name="skillId">
             <button type="submit">Find</button>
         </form>

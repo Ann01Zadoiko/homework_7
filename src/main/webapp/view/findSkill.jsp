@@ -5,7 +5,7 @@
 <html>
     <body>
         <form action="/skills/find">
-            <label for="id"><font color="#ffffff">Skill id:</font></label><br>
+            <label for="id">Skill id:</label><br>
             <input type="text" id="skillId" name="skillId">
             <button type="submit">Find</button>
         </form><br>
@@ -34,7 +34,7 @@
             </table>
         </c:if>
         <c:if test="${empty skill.id}">
-            <p><font color="#ffffff">${message}</font></p>
+            <p>${message}</p>
         </c:if>
     </body>
 </html>

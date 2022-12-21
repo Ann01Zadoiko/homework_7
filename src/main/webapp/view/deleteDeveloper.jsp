@@ -5,10 +5,10 @@
 <html>
     <body>
         <form action="/developers/delete">
-            <label for="id"><font color="#ffffff">Developer id:</font></label><br>
+            <label for="id">Developer id:</label><br>
             <input type="text" id="developerId" name="developerId">
             <button type="submit">Delete</button>
         </form><br>
-        <p><font color="#ffffff">${message}</font></p>
+        <p>${message}</p>
     </body>
 </html>

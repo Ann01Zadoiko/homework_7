@@ -2,6 +2,7 @@ package ua.goit.hibernate.service;
 
 import ua.goit.hibernate.exceptions.DeveloperAlreadyExistException;
 import ua.goit.hibernate.model.dao.DeveloperDao;
+import ua.goit.hibernate.model.dao.ProjectDao;
 import ua.goit.hibernate.model.dto.DeveloperDto;
 import ua.goit.hibernate.repository.DeveloperRepository;
 import ua.goit.hibernate.service.convert.DeveloperConverter;
@@ -20,12 +21,8 @@ public class DeveloperService implements Service<DeveloperDto> {
 
     @Override
     public DeveloperDto save(DeveloperDto dto) {
-//        DeveloperDao savedProject = developersRepository.save(developersConverter.to(dto));
-//        return developersConverter.from(savedProject);
-        DeveloperDao savedDeveloper = developersRepository.save(developersConverter.to(dto));
-        DeveloperDto developersDto = developersConverter.from(savedDeveloper);
-        validateDeveloper(dto, developersDto);
-        return developersDto;
+        DeveloperDao savedProject = developersRepository.save(developersConverter.to(dto));
+        return developersConverter.from(savedProject);
     }
 
     @Override
@@ -55,12 +52,4 @@ public class DeveloperService implements Service<DeveloperDto> {
         return developersDtoList;
     }
 
-
-    private void validateDeveloper(DeveloperDto savedDeveloper, DeveloperDto newDeveloper) {
-        if(!savedDeveloper.getDeveloperName().equals(newDeveloper.getDeveloperName()) ||
-                !savedDeveloper.getAge().equals(newDeveloper.getAge())) {
-            throw new DeveloperAlreadyExistException(String.format("Developer with name %s already exist with different " +
-                    "age %s", savedDeveloper.getDeveloperName(), savedDeveloper.getAge()));
-        }
-    }
 }

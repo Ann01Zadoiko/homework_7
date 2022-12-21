@@ -5,11 +5,11 @@
 <html>
     <body>
         <form action="/customers/update" method="post">
-            <label for="name"><font color="#ffffff">Customer ID:</font></label><br>
+            <label for="name">Customer ID:</label><br>
             <input type="text" id="customerId" name="customerId"><br>
-            <label for="name"><font color="#ffffff">Customer name:</font></label><br>
+            <label for="name">Customer name:</label><br>
             <input type="text" id="customerName" name="customerName"><br>
-            <label for="name"><font color="#ffffff">Country:</font></label><br>
+            <label for="name">Country:</label><br>
             <input type="text" id="country" name="country"><br>
             <button type="submit">Update</button>
         </form><br>
@@ -36,10 +36,10 @@
                     </tr>
                 </tbody>
             </table>
-            <p><font color="#ffffff">${message}</font></p>
+            <p>${message}</p>
         </c:if>
         <c:if test="${empty updatedCustomer}">
-            <p><font color="#ffffff">${message}</font></p>
+            <p>${message}</p>
         </c:if>
     </body>
 </html>

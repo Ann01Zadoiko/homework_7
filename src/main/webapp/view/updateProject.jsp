@@ -5,13 +5,13 @@
 <html>
     <body>
         <form action="/projects/update" method="post">
-            <label for="name"><font color="#ffffff">Project ID:</font></label><br>
+            <label for="name">Project ID:</label><br>
             <input type="text" id="projectId" name="projectId"><br>
-            <label for="name"><font color="#ffffff">Project name:</font></label><br>
+            <label for="name">Project name:</label><br>
             <input type="text" id="projectName" name="projectName"><br>
-            <label for="name"><font color="#ffffff">Cost:</font></label><br>
+            <label for="name">Cost:</label><br>
             <input type="text" id="cost" name="cost"><br>
-            <label for="name"><font color="#ffffff">Date created (by format yyyy-mm-dd):</font></label><br>
+            <label for="name">Date created (by format yyyy-mm-dd):</label><br>
             <input type="text" id="dateOfCreation" name="dateOfCreation"><br>
             <button type="submit">Update</button>
         </form><br>
@@ -45,7 +45,7 @@
             </table>
         </c:if>
         <c:if test="${empty updatedProject}">
-            <p><font color="#ffffff">${message}</font></p>
+            <p>${message}</p>
         </c:if>
     </body>
 </html>

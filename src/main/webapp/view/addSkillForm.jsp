@@ -4,9 +4,9 @@
 <html>
     <body>
         <form action="/skills/add" method="post">
-            <label for="name"><font color="#ffffff">Programming Language:</font></label><br>
+            <label for="name">Programming Language:</label><br>
             <input type="text" id="programmingLanguage" name="programmingLanguage"><br>
-            <label for="name"><font color="#ffffff">Skill level:</font></label><br>
+            <label for="name">Skill level:</label><br>
             <input type="text" id="skillLevel" name="skillLevel"><br>
             <button type="submit">Save</button>
         </form>

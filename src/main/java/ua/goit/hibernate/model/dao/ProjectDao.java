@@ -35,6 +35,7 @@ public class ProjectDao {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_project")
     public Integer getId() {
         return id;
     }
@@ -61,7 +62,7 @@ public class ProjectDao {
         this.cost = cost;
     }
 
-    @Column(name = "date_of_creation")
+    @Column(name = "date_create")
     public LocalDate getDateOfCreation() {
         return dateOfCreation;
     }

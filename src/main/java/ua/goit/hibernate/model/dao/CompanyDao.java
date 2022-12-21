@@ -27,6 +27,7 @@ public class CompanyDao {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_company")
     public Integer getId() {
         return id;
     }
